@@ -1,4 +1,5 @@
-from math import factorial 
+from math import factorial
+
 resultados = []
 
 def numero_int(entrada):
