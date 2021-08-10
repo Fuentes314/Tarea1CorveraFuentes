@@ -17,13 +17,14 @@ def resp_correcta_metodo1(dato):
     else:
         return None
 
+
 def resp_correcta_metodo2(arreglo):
     resultados_metodo_2 = []
     largo = len(arreglo)
     # cantidad de elementos del arreglo
     i = 0
     while i < largo:
-        #ciclo que recorre cada elemento del arreglo
+        # ciclo que recorre cada elemento del arreglo
         # y llama a la funcion uno enviandolo el dato del arreglo
 
         if isinstance(arreglo[i], int) and arreglo[i] >= 0:
@@ -37,7 +38,7 @@ class TestMetodos(unittest.TestCase):
     def test_add(self):
 
         prueba = [-1, "a", 4, 0.2, 1, 0, 5]
- 
+
         i = random.randint(0, 6)
         result = metodos.multiple_op(prueba[i])
         self.assertEqual(result, resp_correcta_metodo1(prueba[i]))
